@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A3D44"/>
+      <stop offset="1" stop-color="#17181C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D3DEEA"/>
+    </linearGradient>
+    <linearGradient id="capSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9FB0C3"/>
+      <stop offset="1" stop-color="#6E8096"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7A8291"/>
+      <stop offset="1" stop-color="#3F4450"/>
+    </linearGradient>
+    <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="capClip">
+      <rect x="282" y="262" width="460" height="440" rx="88"/>
+    </clipPath>
+  </defs>
+
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#tile)"/>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#glow)"/>
+  <rect x="101" y="101" width="822" height="822" rx="184" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
+
+  <rect x="282" y="300" width="460" height="460" rx="92" fill="#000000" opacity="0.35" transform="translate(0 24)"/>
+  <rect x="282" y="300" width="460" height="440" rx="88" fill="url(#capSide)"/>
+  <rect x="282" y="262" width="460" height="440" rx="88" fill="url(#cap)"/>
+
+  <g clip-path="url(#capClip)">
+    <rect x="160" y="420" width="700" height="70" fill="url(#streak)" transform="rotate(-28 512 482)"/>
+  </g>
+
+  <path transform="translate(512 482)" fill="url(#accent)"
+        d="M0,-150 Q18,-18 150,0 Q18,18 0,150 Q-18,18 -150,0 Q-18,-18 0,-150 Z"/>
+  <path transform="translate(640 350)" fill="url(#accent)"
+        d="M0,-50 Q6,-6 50,0 Q6,6 0,50 Q-6,6 -50,0 Q-6,-6 0,-50 Z"/>
+  <path transform="translate(388 612)" fill="url(#accent)" opacity="0.85"
+        d="M0,-34 Q4,-4 34,0 Q4,4 0,34 Q-4,4 -34,0 Q-4,-4 0,-34 Z"/>
+</svg>
