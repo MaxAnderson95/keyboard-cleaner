@@ -31,6 +31,8 @@ jobs:
           TAG: ${{ github.ref_name }}
         shell: bash
         run: |
+          # actions/checkout v4 stores the pushed tag as a lightweight ref, so fetch the real tag object.
+          git fetch --force origin "refs/tags/${TAG}:refs/tags/${TAG}"
           if [[ "$(git cat-file -t "refs/tags/${TAG}")" != tag ]]; then
             echo "::error::$TAG is a lightweight tag; releases need an annotated tag"
             exit 1
