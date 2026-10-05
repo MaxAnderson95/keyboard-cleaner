@@ -8,6 +8,8 @@
 
 </div>
 
+<img src="assets/screenshots/cleaning.png" alt="Keyboard Cleaner locked over the desktop, with the wiped keys highlighted on an on-screen MacBook keyboard and a prompt to hold space for 5 seconds to finish">
+
 Keyboard Cleaner covers every screen with a dimmed, see-through overlay and locks the keyboard and trackpad the moment it opens. Every key, click, scroll, trackpad gesture, and media key is swallowed system-wide, and the cursor is frozen in place. An on-screen keyboard lights up each key as you wipe it and counts how many you have covered.
 
 To finish, hold the space bar on its own for 5 seconds. Pressing any other key during the hold restarts it, so a cloth resting across the keyboard cannot end the session by accident. The app quits once you let go of space.
